@@ -63,5 +63,10 @@ tasks {
         options.release = 21
         options.compilerArgs.add("-Xlint:deprecation")
         options.compilerArgs.add("-Xlint:unchecked")
+        options.compilerArgs.add("--enable-preview") // ✅ enable preview features
+    }
+
+    withType<JavaExec> {
+        jvmArgs = listOf("--enable-preview") // pro runtime
     }
 }
