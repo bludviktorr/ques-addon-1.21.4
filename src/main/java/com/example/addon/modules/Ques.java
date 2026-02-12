@@ -43,7 +43,7 @@ public class Ques extends Module{
      * The {@code name} parameter should be in kebab-case.
      */
     public Ques() {
-        super(Ques.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
+    public static final Category CATEGORY = Categories.World;
     }
 
     /**
